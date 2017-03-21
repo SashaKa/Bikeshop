@@ -4,4 +4,56 @@ body {
     font-weight: bold;
     background-color: #ffffff;
     color: #0000;
+    max-width: 1920px;
+    margin: 0 auto;
+
+}
+.container {
+    margin: 0 20.1622%;
+}
+header {
+    background-image: url(../img/You-create-the-journey.png),
+    url(../img/Slider01.jpg) ;
+    background-position: top right 100px, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%;
+    min-height: 65.2667rem;
+}
+.header-menu,
+.footer-menu {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-menu img,
+.footer-menu img {
+    margin-right: auto;
+    flex-basis: 10.7333rem;
+}
+.main-nav  {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center
+}
+.main-nav li {
+    list-style: none;
+    padding: 1.15rem;
+}
+nav a {
+    text-decoration: none;
+}
+.sub-nav {
+
+    position: absolute;
+    display: none;
 }
