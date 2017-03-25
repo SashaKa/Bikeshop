@@ -14,9 +14,9 @@ body {
 header {
     background-image: url(../img/You-create-the-journey.png),
     url(../img/Slider01.jpg) ;
-    background-position: top right 100px, center;
+    background-position: center 34%, center top;
     background-repeat: no-repeat, no-repeat;
-    background-size: 100%;
+    background-size: auto, 100%;
     min-height: 65.2667rem;
 }
 .header-menu,
@@ -53,7 +53,50 @@ nav a {
     text-decoration: none;
 }
 .sub-nav {
-
     position: absolute;
     display: none;
+    border-radius: 0.866rem;
+    background-color: #fcff19;
+    padding-left: 1rem;
+}
+.main-link,
+.sub-link {
+    color: #fff;
+    line-height: 2.1333rem;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem 0.6rem;
+}
+.sub-link {
+    color: #000;
+    padding-left: 0;
+}
+.sub-nav li {
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-right: 3.1333rem;
+}
+.main-link:hover{
+    background-color: #fcff19;
+    color: #000;
+    border-radius: 0.866rem;
+}
+.main-nav li:first-child:hover .sub-nav {
+    display: block;
+}
+/*http://codepen.io/GauravBarde/pen/ozGzNB  hover effect*/
+
+ .shop-bike {
+    background-color: #000000;
+    color: #fcff19;
+    border-radius: 0.866rem;
+    padding: 0.6rem 1.73rem;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    line-height: 2rem;
+    font-weight: 800;
+    position: absolute;
+    top: 100%;
+    left: 45%;
 }
