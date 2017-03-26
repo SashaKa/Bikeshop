@@ -11,13 +11,13 @@ body {
 .container {
     margin: 0 20.1622%;
 }
-header {
+.header-slider {
     background-image: url(../img/You-create-the-journey.png),
     url(../img/Slider01.jpg) ;
-    background-position: center 34%, center top;
+    background-position: center 44%, center top;
     background-repeat: no-repeat, no-repeat;
     background-size: auto, 100%;
-    min-height: 65.2667rem;
+    height: 48rem;
 }
 .header-menu,
 .footer-menu {
@@ -77,6 +77,10 @@ nav a {
     padding-top: 0;
     padding-right: 3.1333rem;
 }
+.sub-nav li:hover {
+    background-color: #fff;
+    border-radius: 0.866rem;
+}
 .main-link:hover{
     background-color: #fcff19;
     color: #000;
@@ -85,9 +89,30 @@ nav a {
 .main-nav li:first-child:hover .sub-nav {
     display: block;
 }
+.basket {
+    cursor: pointer;
+}
 /*http://codepen.io/GauravBarde/pen/ozGzNB  hover effect*/
+.slider-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 21rem;
+}
+.back,
+.forward {
+    align-self: flex-start;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.forward {
+    margin-right: 1rem;
+}
+.back {
+    margin-left: 1rem;
+}
 
- .shop-bike {
+ .shop-bike,
+ .buy-it {
     background-color: #000000;
     color: #fcff19;
     border-radius: 0.866rem;
@@ -96,7 +121,99 @@ nav a {
     border: none;
     line-height: 2rem;
     font-weight: 800;
+
+}
+/*--------------categories----------*/
+
+.categories {
+    background: url(../img/CATEGORIES_BG_IMAGE.jpg) no-repeat center;
+    height: 37rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.categories-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-article {
+    align-self: center;
+        margin-bottom: 4rem;
+}
+.categories-photo {
+    display: flex;
+    justify-content: space-between;
+}
+.img-wrap{
+    position: relative;
+    z-index: 1;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.title-wrap {
     position: absolute;
-    top: 100%;
-    left: 45%;
+    top: 39%;
+    z-index: 2;
+    text-align: center;
+    line-height: 2.1333rem;
+    align-self: center;
+}
+ .title-wrap .third-wrap {
+    left: 6rem;
+}
+.title-wrap .second-wrap {
+    left: 5rem;
+}
+.category-title {
+    font-size: 1rem;
+    color: #fcff19;
+    font-weight: bold;
+}
+.category-offer {
+    font-size: 1.05rem;
+    color: #fff;
+}
+.link-to-store {
+    display: none;
+}
+/*--------------popular-------------------*/
+.title-popular {
+    text-align: center;
+    margin-top: 5rem;
+}
+.popular {
+    display: flex;
+    flex-direction: row;
+}
+.wrap-bike {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.wrap-buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.buy-it {
+    background-color: #b7b7b7;
+    color: #fff;
+    padding: 0.3rem 1.6rem;
+    text-transform: uppercase;
+}
+.buy-it:hover {
+    background-color: #000000;
+    color: #fcff19;
+}
+.price {
+    font-weight: lighter;
+}
+.contact-us {
+
+    display: flex;
+    flex-direction: column;
+    background:url(../img/CONTACT_US_BG.jpg) no-repeat center;
+    height: 40rem;
 }

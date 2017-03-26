@@ -6,107 +6,124 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Bike for you</title>
     </head>
     <body>
-        <header>
-            <div class="header-menu container">
-                <img src="img/the-bike-shop.png" alt="bikeshop"class="logotype" width="161" height="51"/>
-                <nav>
-                    <ul class="main-nav">
-                        <li>
-                            <a href="#" class="main-link current">BICYCLES</a>
-                            <ul class="sub-nav">
-                                <li><a href="#" class="sub-link">FIXED / SINGLE SPEED</a></li>
-                                <li><a href="#" class="sub-link">CITY BIKES</a></li>
-                                <li><a href="#" class="sub-link">PREMIUM SERIES</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#" class="main-link">ACCESSORIES</a></li>
-                        <li><a href="#" class="main-link">PARTS</a></li>
-                        <li><a href="#" class="main-link">EXTRAS</a></li>
-                    </ul>
-                </nav>
-                <div class="basket"></div>
+        <header class="header-slider">
+            <div class="container">
+                <div class="header-menu">
+                    <img src="img/the-bike-shop.png" alt="bikeshop"class="logotype" width="161" height="51"/>
+                    <nav>
+                        <ul class="main-nav">
+                            <li>
+                                <a href="#" class="main-link current">BICYCLES</a>
+                                <ul class="sub-nav">
+                                    <li><a href="#" class="sub-link">FIXED / SINGLE SPEED</a></li>
+                                    <li><a href="#" class="sub-link">CITY BIKES</a></li>
+                                    <li><a href="#" class="sub-link">PREMIUM SERIES</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="main-link">ACCESSORIES</a></li>
+                            <li><a href="#" class="main-link">PARTS</a></li>
+                            <li><a href="#" class="main-link">EXTRAS</a></li>
+                        </ul>
+                    </nav>
+                    <a class="basket"><img src="img/Basket.png" alt="Basket" class="basket"></a>
+                </div>
             </div>
-            <div class="header-slider">
+            <div class="slider-btn">
+                <a class="back"><img src="Img\LEFT_BUTTON_ACTIVE.png" alt=""></a>
                 <button type="button" class="shop-bike">Shop bikes</button>
+                <a class="forward"><img src="Img\RIGHT-BUTTON-LINK.png" alt=""></a>
             </div>
         </header>
         <main>
             <article class="categories">
                 <h2 class="title-article">CATEGORIES</h2>
-                <div class="categories-photo container">
+                <div class="categories-wrap">
                     <div class="img-wrap">
-                        <img src="" alt="" class="category-img"width="347" height="288">
-                        <span class="category-title">FIXED / SINGLE SPEED</span>
-                        <p class="category-offer">Are You ready for the 27.5 Revolution?</p>
+                        <img src="img\CATEGORIES_PHOTO_01.jpg" alt="" class="category-img"width="347" height="288">
+                        <div class="title-wrap first-wrap">
+                            <span class="category-title">FIXED / SINGLE SPEED</span>
+                            <p class="category-offer">Are You ready for the 27.5 Revolution?</p>
+                        </div>
                         <div class="hover-wrap">
-                            <a href="" class="lint-to-store">GO TO STORE</a>
+                            <a href="" class="link-to-store">GO TO STORE</a>
                         </div>
                     </div>
                     <div class="img-wrap">
-                        <img src="" alt="" class="category-img"width="347" height="288">
-                        <span class="category-title">PREMIUM SERIES</span>
-                        <p class="category-offer">Exclusive  Bike Components</p>
+                        <img src="img\CATEGORIES_PHOTO_02.jpg" alt="" class="category-img"width="347" height="288">
+                        <div class="title-wrap second-wrap ">
+                            <span class="category-title">PREMIUM SERIES</span>
+                            <p class="category-offer">Exclusive  Bike Components</p>
+                        </div>
                         <div class="hover-wrap">
-                            <a href="" class="lint-to-store">GO TO STORE</a>
+                            <a href="" class="link-to-store">GO TO STORE</a>
                         </div>
                     </div>
                     <div class="img-wrap">
-                        <img src="" alt="" class="category-img"width="347" height="288">
-                        <span class="category-title">CITY BIKES</span>
-                        <p class="category-offer">Street Playground</p>
+                        <img src="img\CATEGORIES_PHOTO_03.jpg" alt="" class="category-img"width="347" height="288">
+                        <div class="title-wrap third-wrap">
+                            <span class="category-title">CITY BIKES</span>
+                            <p class="category-offer">Street Playground</p>
+                        </div>
                         <div class="hover-wrap">
-                            <a href="" class="lint-to-store">GO TO STORE</a>
+                            <a href="" class="link-to-store">GO TO STORE</a>
                         </div>
                     </div>
                 </div>
             </article>
+            <h2 class="title-popular">POPULAR BIKES</h2>
             <article class="popular">
-                <h2 class="title-article">POPULAR BIKES</h2>
                 <div class="wrap-bike">
-                    <img src="" alt="" class="photo-bike"width="490" height="392"></img>
-                    <div class="description-wrap">
-                        <span class="title-bike"></span>
-                        <p class="price"></p>
-                    </div>
-                    <div class="button-wrap">
-                        <select name="option" id="">
-                            <option value="options"selected>option</option>
-                            <button type="button"class="buy-it"></button>
-                        </select>
+                    <img src="img/ITEM_PHOTO.jpg" alt="" class="photo-bike"width="490" height="392"></img>
+                    <div class="wrap-buy">
+                        <div class="description-wrap">
+                            <span class="title-bike">FIXED GEAR</span>
+                            <p class="price">$249.00</p>
+                        </div>
+                        <div class="button-wrap">
+                            <select name="option" id="">
+                                <option value="options"selected>option</option>
+                            </select>
+                            <button type="button"class="buy-it">Buy</button>
+                        </div>
                     </div>
                 </div>
                 <div class="wrap-bike">
-                    <img src="" alt="" class="photo-bike"width="490" height="392"></img>
-                    <div class="description-wrap">
-                        <span class="title-bike"></span>
-                        <p class="price"></p>
-                    </div>
-                    <div class="button-wrap">
-                        <select name="option" id="">
-                            <option value="options"selected>option</option>
-                            <button type="button"class="buy-it"></button>
-                        </select>
+                    <img src="img/ITEM_PHOTO2.jpg" alt="" class="photo-bike"width="490" height="392"></img>
+                    <div class="wrap-buy">
+                        <div class="description-wrap">
+                            <span class="title-bike">BIG BOY ULTRA</span>
+                            <p class="price">$249.00</p>
+                        </div>
+                        <div class="button-wrap">
+                            <select name="option" id="">
+                                <option value="options"selected>option</option>
+                            </select>
+                            <button type="button"class="buy-it">Buy</button>
+                        </div>
                     </div>
                 </div>
                 <div class="wrap-bike">
-                    <img src="" alt="" class="photo-bike"width="490" height="392"></img>
-                    <div class="description-wrap">
-                        <span class="title-bike"></span>
-                        <p class="price"></p>
-                    </div>
-                    <div class="button-wrap">
-                        <select name="option" id="">
-                            <option value="options"selected>option</option>
-                            <button type="button"class="buy-it"></button>
-                        </select>
+                    <img src="img\ITEM_PHOTO3.jpg" alt="" class="photo-bike"width="490" height="392"></img>
+                    <div class="wrap-buy">
+                        <div class="description-wrap">
+                            <span class="title-bike">SANCHAEZ</span>
+                            <p class="price">$249.00</p>
+                        </div>
+                        <div class="button-wrap">
+                            <select name="option" id="">
+                                <option value="options"selected>option</option>
+                            </select>
+                            <button type="button"class="buy-it">Buy</button>
+                        </div>
                     </div>
                 </div>
             </article>
             <section class="contact-us">
-                <h2 class="title-article"></h2>
+                <h2 class="title-article">contact us</h2>
                 <p class="title-form">Please contact us for all inquiries and purchase options.</p>
                 <form class="feedback-form" action="#" method="post">
                     <input type="text" id="name" name="user-name" class="input-field" placeholder="Name">
