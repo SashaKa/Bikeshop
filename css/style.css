@@ -224,12 +224,12 @@ nav a {
 }
 .indicator-option {
     position: absolute;
-    top: 30px;
+    top: 0px;
     left: 1px;
     width: 16px;
     height: 16px;
     border-radius: 25%;
-    border: 2px solid #fefefe;
+    border: 2px solid #a9a9a9;
 }
 .buy-it {
     background-color: #b7b7b7;
