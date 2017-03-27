@@ -201,6 +201,36 @@ nav a {
     flex-direction: row;
     justify-content: space-around;
 }
+.option-choice {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    padding: 0.2rem 0.1rem 0.1rem 0.5rem;
+    border: none;
+    box-shadow: none;
+    border-radius: 0.866rem;
+    font-size: 1rem;
+    line-height:2.1333rem;
+    font-weight: bold;
+    font-family: "Roboto", "Arial", sans-serif;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #a9a9a9;
+    text-transform: uppercase;
+    width: 9.2667rem;
+    position: relative;
+}
+.indicator-option {
+    position: absolute;
+    top: 30px;
+    left: 1px;
+    width: 16px;
+    height: 16px;
+    border-radius: 25%;
+    border: 2px solid #fefefe;
+}
 .buy-it {
     background-color: #b7b7b7;
     color: #fff;
@@ -214,32 +244,34 @@ nav a {
 .price {
     font-weight: lighter;
 }
+
+/*-----------------form------------------------*/
 .contact-us {
     display: flex;
     flex-direction: column;
     background:url(../img/CONTACT_US_BG.jpg) no-repeat center;
-    height: 40rem;
+    height: 39rem;
     background-color:rgba(183, 183, 183, 0.62);
 }
 .wrap-title {
-    align-self: flex-end;
-    margin-right: 21%;
+    align-self: center;
     text-align: center;
-    width: 30%;
+    width: 26%;
+    margin-bottom: 1.5333rem;
 }
 .wrap-title .title-article {
     margin-bottom: 2rem;
     margin-top: 3rem;
     text-transform: uppercase;
+
 }
-/*-----------------form------------------------*/
 .feedback-form {
     display: flex;
-    margin-right: 21%;
     flex-direction: column;
-    width: 30%;
-    align-self: flex-end;
+    width: 26%;
+    align-self: center;
     justify-content: space-between;
+    color: #808080;
 }
 
 label{
@@ -257,11 +289,34 @@ input[type=text],
 textarea[name=comment],
 button[type=submit] {
     border-radius: 0.36rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5333rem;
     padding: 0.5rem;
-    border: 1px solid grey;
+    border: 2px solid #e0e0e0;
+    text-transform:uppercase;
+    font-style: italic;
+}
+textarea[name=comment] {
+    color: #808080;
+}
+.form-btn {
+    background-color: #b7b7b7;
+    color: #fff;
+    font-weight: bold;
+
+}
+.form-btn:hover{
+    color:#fcff19;
+    background-color:#000;
 }
 /*-------------footer-----------------------*/
 footer {
-    background-color: rgba(183, 183, 185, 0.62);
+    background-color: #fcff19;
+    color: #000;
+}
+footer .main-link {
+    color: #000;
+}
+footer .main-link:hover{
+    color:#fff;
+    background-color: #000;
 }
