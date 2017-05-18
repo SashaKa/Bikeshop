@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="css/normalize.css" rel="stylesheet">
         <link rel="stylesheet" href="css/minireset.min.css">
         <link rel="stylesheet" href="css/style.css">
@@ -39,6 +40,7 @@
                 <button type="button" class="shop-bike">Shop bikes</button>
                 <a class="forward"><img src="img\RIGHT-BUTTON-LINK.png" alt=""></a>
             </div>
+            <span class="scroll-icon"></span>
         </header>
         <main>
             <article class="categories">
@@ -51,7 +53,8 @@
                             <p class="category-offer">Are You ready for the 27.5 Revolution?</p>
                         </div>
                         <div class="hover-wrap">
-                            <a href="" class="link-to-store">GO TO STORE</a>
+                            <div class="triangle-hover"></div>
+                            <a href="#" class="link-to-store">GO TO STORE</a>
                         </div>
                     </div>
                     <div class="img-wrap">
@@ -61,6 +64,7 @@
                             <p class="category-offer">Exclusive  Bike Components</p>
                         </div>
                         <div class="hover-wrap">
+                            <div class="triangle-hover"></div>
                             <a href="" class="link-to-store">GO TO STORE</a>
                         </div>
                     </div>
@@ -71,6 +75,7 @@
                             <p class="category-offer">Street Playground</p>
                         </div>
                         <div class="hover-wrap">
+                            <div class="triangle-hover"></div>
                             <a href="" class="link-to-store">GO TO STORE</a>
                         </div>
                     </div>
@@ -86,9 +91,7 @@
                             <p class="price">$249.00</p>
                         </div>
                         <div class="button-wrap">
-                            <select name="option" id="">
-                                <option value="options"selected>option</option>
-                            </select>
+                            <span class="option-choice">option<i class="fa fa-chevron-down" aria-hidden="true"></i></span>
                             <button type="button"class="buy-it">Buy</button>
                         </div>
                     </div>
@@ -101,9 +104,7 @@
                             <p class="price">$249.00</p>
                         </div>
                         <div class="button-wrap">
-                            <select name="option" id="">
-                                <option value="options"selected>option</option>
-                            </select>
+                            <span class="option-choice">option<i class="fa fa-chevron-down" aria-hidden="true"></i></span>
                             <button type="button"class="buy-it">Buy</button>
                         </div>
                     </div>
@@ -116,9 +117,7 @@
                             <p class="price">$249.00</p>
                         </div>
                         <div class="button-wrap">
-                            <select name="option" id="">
-                                <option value="options"selected>option</option>
-                            </select>
+                            <span class="option-choice">option<i class="fa fa-chevron-down" aria-hidden="true"></i></span>
                             <button type="button"class="buy-it">Buy</button>
                         </div>
                     </div>
@@ -138,7 +137,7 @@
                     </div>
                     <input type="text"id="e-mail" name="user-email" class="input-field" placeholder="USER@DOMAIN.COM">
                     <label for="e-mail">E-mail</label>
-                    <textarea name="comment" id="comment-field" rows="5" cols="15">Message</textarea>
+                    <textarea name="comment" id="comment-field" rows="10" cols="15">Message</textarea>
                     <button class="form-btn"type="submit"value="send">Send</input>
                 </form>
             </section>
@@ -146,7 +145,7 @@
         <footer>
             <div class="container">
                 <div class="footer-menu">
-                    <img src="" alt=""class="logotype" width="161" height="51"/>
+                    <img src="img/the-bike-shop-invert.png" alt=""class="logotype" width="161" height="51"/>
                     <nav >
                         <ul class="footer-nav">
                             <li><a href="#" class="main-link">BICYCLES</a></li>
