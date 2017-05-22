@@ -36,6 +36,7 @@ body {
 .main-link {
   text-decoration: none;
   color:  #ffffff;
+  transition: all 0.3s linear;
   .main-text-style;
     &:hover {
       background-color:  #fcff19;
@@ -44,22 +45,33 @@ body {
     }
 }
 .sub-nav {
-  display: none;
+  visibility: hidden;
   background-color:  #fcff19;
   position: absolute;
   border-radius: 10px;
-  padding: 10px;
-
-    &:hover {
-      background-color: #ffffff;
-    }
+  transition: all 0.2s ease-in-out;
+  top: 40px;
+  left: 0;
+  z-index: 2;
 }
-.main-link:first-child:hover+.sub-nav {
-      display: block;
-    }
+.main-nav li:first-child:hover  .sub-nav {
+      visibility: visible;
+      transform: translateY(0%);
+  }
+.sub-nav li {
+    padding: 10px 25px 10px 10px;
 
+}
+
+.sub-nav li:hover {
+      background-color: #ffffff;
+      border-radius: 10px;
+  }
 .sub-link { 
   text-decoration: none;
   color:  #010101;
   .main-text-style;
+  padding: 5px 0;
+  transition: all 0.3s linear;
+    
 }

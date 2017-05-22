@@ -46,6 +46,8 @@ body {
 .main-link {
   text-decoration: none;
   color: #ffffff;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   font-size: 15px;
   font-weight: 700;
   line-height: 20px;
@@ -57,17 +59,29 @@ body {
   border-radius: 10px;
 }
 .sub-nav {
-  display: none;
+  visibility: hidden;
   background-color: #fcff19;
   position: absolute;
   border-radius: 10px;
-  padding: 10px;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  top: 40px;
+  left: 0;
+  z-index: 2;
 }
-.sub-nav:hover {
+.main-nav li:first-child:hover .sub-nav {
+  visibility: visible;
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+}
+.sub-nav li {
+  padding: 10px 25px 10px 10px;
+}
+.sub-nav li:hover {
   background-color: #ffffff;
-}
-.main-link:first-child:hover + .sub-nav {
-  display: block;
+  border-radius: 10px;
 }
 .sub-link {
   text-decoration: none;
@@ -76,4 +90,7 @@ body {
   font-weight: 700;
   line-height: 20px;
   padding: 10px 10px;
+  padding: 5px 0;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
