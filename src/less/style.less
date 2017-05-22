@@ -14,6 +14,8 @@ body {
 .site-wrapper {
   margin: 0 auto;
   padding: 0 10%;
+  min-width: 940px;
+  min-height: 100vh;
 
 }
 .header-slider {
@@ -21,11 +23,16 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  position: relative;
 }
 .header-menu {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+    // justify-content: space-around;
+    align-items: baseline;
+}
+.logo-wrap {
+  padding-top: 30px;
+  margin-right: auto;
 }
 .main-nav, 
 .main-link {
@@ -74,4 +81,8 @@ body {
   padding: 5px 0;
   transition: all 0.3s linear;
     
+}
+.slider-btn {
+  position: absolute;
+  top: 50%;
 }

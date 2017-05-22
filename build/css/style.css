@@ -12,12 +12,15 @@ body {
 .site-wrapper {
   margin: 0 auto;
   padding: 0 10%;
+  min-width: 940px;
+  min-height: 100vh;
 }
 .header-slider {
   background-image: url(../img/Slider01.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  position: relative;
 }
 .header-menu {
   display: -webkit-box;
@@ -25,14 +28,15 @@ body {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -moz-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -moz-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+.logo-wrap {
+  padding-top: 30px;
+  margin-right: auto;
 }
 .main-nav,
 .main-link {
@@ -93,4 +97,8 @@ body {
   padding: 5px 0;
   -moz-transition: all 0.3s linear;
   transition: all 0.3s linear;
+}
+.slider-btn {
+  position: absolute;
+  top: 50%;
 }
