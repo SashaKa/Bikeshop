@@ -410,12 +410,23 @@ h2 {
   }
   
 }
-.footer-wrapper {
+.footer-menu {
   background-color: #fcff19;
   margin: 0 auto;
   padding: 0 10%;
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   .footer-link {
     color: #000;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      background-color: #000;
+      color: #fdff19;
+    }
+  }
+  .logotype {
+    margin-top: 15px;
   }
 }

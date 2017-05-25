@@ -529,11 +529,35 @@ h2 {
 .feedback-form textarea:focus {
   border-color: #000;
 }
-.footer-wrapper {
+.footer-menu {
   background-color: #fcff19;
   margin: 0 auto;
   padding: 0 10%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -moz-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
-.footer-wrapper .footer-link {
+.footer-menu .footer-link {
   color: #000;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.footer-menu .footer-link:hover {
+  background-color: #000;
+  color: #fdff19;
+}
+.footer-menu .logotype {
+  margin-top: 15px;
 }
