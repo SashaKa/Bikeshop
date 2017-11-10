@@ -216,6 +216,8 @@ h2 {
 }
 .category-wrap {
   width: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
